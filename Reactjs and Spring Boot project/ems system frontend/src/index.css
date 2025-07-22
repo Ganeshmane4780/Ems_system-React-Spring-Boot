@@ -1,0 +1,76 @@
+/* Base font and layout setup */
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hyperlinks */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button, .btn {
+  font-family: inherit;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Light/Dark theme support (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f8f9fa;
+    background-color: #121212;
+  }
+
+  a {
+    color: #91a7ff;
+  }
+
+  a:hover {
+    color: #748ffc;
+  }
+
+  button {
+    background-color: #1a1a1a;
+    color: #f8f9fa;
+  }
+}
